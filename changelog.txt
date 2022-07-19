@@ -1,0 +1,13 @@
+# Changelog
+
+## 0.1
+
+### Additions
+Add some meals to the main mod along with some recipe changes.
+
+## 0.2
+
+### Changes
+Change some item textures.
+Change some recipes.
+Delete some unnecessary things.
