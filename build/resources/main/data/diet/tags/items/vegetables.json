@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [  ],
+  "optional": [
+    "largemeals:cod_deluxe",
+    "largemeals:cod_surprise",
+    "largemeals:hearty_lunch",
+    "largemeals:milk_chicken",
+    "largemeals:mushroom_omelette",
+    "largemeals:omurice",
+    "largemeals:pufferfish_broth"
+  ]
+}
