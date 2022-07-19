@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [  ],
+  "optional": [
+    "largemeals:hearty_lunch",
+    "largemeals:omurice"
+  ]
+}
