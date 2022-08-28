@@ -1,0 +1,14 @@
+{
+  "block.largemeals.omurice_block": "蛋包饭",
+
+  "item.largemeals.pufferfish_broth": "河豚汤",
+  "item.largemeals.milk_chicken": "奶香鸡肉",
+  "item.largemeals.cod_deluxe": "鳕鱼豪宴",
+  "item.largemeals.cod_surprise": "鳕鱼奇宴",
+  "item.largemeals.hearty_lunch": "丰盛午餐",
+  "item.largemeals.mushroom_omelette": "蘑菇蛋包饭",
+  "item.largemeals.omurice": "碗装蛋包饭",
+
+  "largemeals.advancement.get_hearty_lunch": "午餐时间",
+  "largemeals.advancement.get_hearty_lunch.desc": "烹饪一道丰盛午餐。"
+}
