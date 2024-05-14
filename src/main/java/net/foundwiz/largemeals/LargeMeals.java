@@ -17,6 +17,8 @@ public class LargeMeals {
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
 
+        eventBus.addListener(ModItems::buildCreativeTab);
+
         MinecraftForge.EVENT_BUS.register(this);
     }
 }

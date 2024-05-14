@@ -17,7 +17,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.19.2-1.0'
+version = '1.20.1-1.0'
 group = 'net.foundwiz.largemeals'
 archivesBaseName = 'largemeals'
 
@@ -45,7 +45,7 @@ repositories {
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft {
-    mappings channel: 'official', version: '1.19.2'
+    mappings channel: 'official', version: '1.20.1'
 
     runs {
         client {
@@ -123,16 +123,16 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.2-43.3.13'
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.32'
 
-    compileOnly fg.deobf("mezz.jei:jei-1.19.2-common-api:11.6.0.1019")
-    compileOnly fg.deobf("mezz.jei:jei-1.19.2-forge-api:11.6.0.1019")
+    compileOnly fg.deobf("mezz.jei:jei-1.20.1-common-api:15.3.0.4")
+    compileOnly fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.3.0.4")
 
-    runtimeOnly fg.deobf("mezz.jei:jei-1.19.2-common:11.6.0.1019")
-    runtimeOnly fg.deobf("mezz.jei:jei-1.19.2-forge:11.6.0.1019")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-common:15.3.0.4")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.3.0.4")
 
-    implementation fg.deobf("curse.maven:farmersdelight-398521:5051241")
-    runtimeOnly fg.deobf("curse.maven:appleskin-248787:3872808")
+    implementation fg.deobf("curse.maven:farmersdelight-398521:5051242")
+    runtimeOnly fg.deobf("curse.maven:appleskin-248787:4770828")
 }
 
 jar {
@@ -142,7 +142,7 @@ jar {
                 "Specification-Vendor"    : "foundwiz",
                 "Specification-Version"   : "1",
                 "Implementation-Title"    : "largemeals",
-                "Implementation-Version"  : "1.19.2-1.0",
+                "Implementation-Version"  : "1.20.1-1.0",
                 "Implementation-Vendor"   : "foundwiz",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
