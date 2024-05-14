@@ -1,6 +1,6 @@
 # Large Meals
 
-<img src="https://i.postimg.cc/brqcsFK6/curseforge-banner.png" width="50%">
+<img src="./src/main/resources/curseforge_banner.png" width="50%">
 
 ### Introduction
 
