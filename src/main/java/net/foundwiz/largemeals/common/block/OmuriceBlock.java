@@ -22,7 +22,7 @@ public class OmuriceBlock extends FeastBlock {
     }
 
     public VoxelShape getShape(BlockState state, BlockGetter worldIn, BlockPos pos, CollisionContext context) {
-        return (Integer)state.getValue(SERVINGS) == 0 ? PLATE_SHAPE : ROAST_SHAPE;
+        return state.getValue(SERVINGS) == 0 ? PLATE_SHAPE : ROAST_SHAPE;
     }
 
     static {

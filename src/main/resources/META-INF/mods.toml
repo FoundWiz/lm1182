@@ -6,7 +6,7 @@ modId="largemeals"
 version="${file.jarVersion}"
 displayName="Large Meals"
 logoFile="nologoyet.png"
-credits="jamb and Khanh Nguyen"
+credits="jamb and Khanh Nguyen, cwielder"
 authors="FoundWiz"
 description='''
 This Farmer's Delight addon adds some recipes to the main mod.
@@ -20,12 +20,12 @@ This Farmer's Delight addon adds some recipes to the main mod.
 [[dependencies.largemeals]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2,1.19)"
+    versionRange="[1.19.2,1.20)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.largemeals]]
 modId = "farmersdelight"
 mandatory = true
-versionRange = "[1.1.2,)"
+versionRange = "[1.2.4,)"
 ordering = "AFTER"
 side = "BOTH"
