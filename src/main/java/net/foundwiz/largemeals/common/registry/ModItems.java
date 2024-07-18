@@ -38,6 +38,19 @@ public class ModItems {
     public static final RegistryObject<Item> OMURICE = ITEMS.register("omurice",
             () -> new ConsumableItem(new Item.Properties().food(FoodValues.OMURICE).craftRemainder(Items.BOWL).stacksTo(16), true));
 
+    public static final RegistryObject<Item> MUSHROOM_POT_PIE_BLOCK = ITEMS.register("mushroom_pot_pie",
+            () -> new BlockItem(ModBlocks.MUSHROOM_POT_PIE_BLOCK.get(), new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> MUSHROOM_POT_PIE = ITEMS.register("mushroom_pot_pie_slice",
+            () -> new ConsumableItem(new Item.Properties().food(FoodValues.MUSHROOM_POT_PIE).craftRemainder(Items.BOWL).stacksTo(16), true));
+
+    public static final RegistryObject<Item> POTATO_SOUP = ITEMS.register("potato_soup",
+            () -> new ConsumableItem(new Item.Properties().food(FoodValues.POTATO_SOUP).craftRemainder(Items.BOWL).stacksTo(16), true));
+    public static final RegistryObject<Item> RED_SOUP = ITEMS.register("red_soup",
+            () -> new ConsumableItem(new Item.Properties().food(FoodValues.RED_SOUP).craftRemainder(Items.BOWL).stacksTo(16), true));
+    public static final RegistryObject<Item> SWEET_BERRY_CUSTARD = ITEMS.register("sweet_berry_custard",
+            () -> new ConsumableItem(new Item.Properties().food(FoodValues.SWEET_BERRY_CUSTARD).craftRemainder(Items.BOWL).stacksTo(16), true));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

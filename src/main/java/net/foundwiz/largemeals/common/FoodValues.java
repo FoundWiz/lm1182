@@ -32,8 +32,23 @@ public class FoodValues {
             .nutrition(7).saturationMod(0.6f)
             .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), SHORT_DURATION, 0), 1.0F).build();
 
+    public static final FoodProperties RED_SOUP = (new FoodProperties.Builder())
+            .nutrition(6).saturationMod(0.7f)
+            .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), BRIEF_DURATION, 0), 1.0F).build();
+    public static final FoodProperties POTATO_SOUP = (new FoodProperties.Builder())
+            .nutrition(6).saturationMod(0.7f)
+            .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), BRIEF_DURATION, 0), 1.0F).build();
+    public static final FoodProperties SWEET_BERRY_CUSTARD = (new FoodProperties.Builder())
+            .nutrition(6).saturationMod(0.7f)
+            .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), BRIEF_DURATION, 0), 1.0F).build();
+
     //Feast Portions
     public static final FoodProperties OMURICE = (new FoodProperties.Builder())
+            .nutrition(6).saturationMod(0.6f)
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), LONG_DURATION, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), LONG_DURATION, 0), 1.0F).build();
+
+    public static final FoodProperties MUSHROOM_POT_PIE = (new FoodProperties.Builder())
             .nutrition(6).saturationMod(0.6f)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), LONG_DURATION, 0), 1.0F)
             .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), LONG_DURATION, 0), 1.0F).build();
