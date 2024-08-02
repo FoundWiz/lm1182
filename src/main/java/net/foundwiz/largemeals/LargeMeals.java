@@ -1,5 +1,6 @@
 package net.foundwiz.largemeals;
 
+import net.foundwiz.largemeals.common.registry.ModCreativeTab;
 import net.minecraft.world.level.block.Blocks;
 import net.foundwiz.largemeals.common.registry.ModBlocks;
 import net.foundwiz.largemeals.common.registry.ModItems;
@@ -24,14 +25,6 @@ public class LargeMeals {
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
 
-        eventBus.addListener(this::setup);
-
         MinecraftForge.EVENT_BUS.register(this);
-    }
-
-    private void setup(final FMLCommonSetupEvent event)
-    {
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 }

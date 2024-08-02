@@ -19,7 +19,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: "org.spongepowered.mixin"
 
-version = '1.18.2-1.0'
+version = '1.20.1-1.0'
 group = 'net.foundwiz.largemeals'
 archivesBaseName = 'largemeals'
 
@@ -27,12 +27,26 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 repositories {
     maven {
-        name = "Progwml6 maven"
-        url = "https://dvs1.progwml6.com/files/maven/"
+        // CraftTweaker and JEI
+        name = "BlameJared"
+        url = "https://maven.blamejared.com/"
+        content {
+            includeGroup "com.blamejared.crafttweaker"
+            includeGroup "org.openzen.zencode"
+            includeGroup "mezz.jei"
+        }
     }
     maven {
-        name = "ModMaven"
-        url = "https://modmaven.dev"
+        // JEI fallback
+        name = "Modmaven"
+        url = "https://modmaven.dev/"
+        content {
+            includeGroup "mezz.jei"
+        }
+    }
+    maven {
+        name = "Progwml6 maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
     }
     maven {
         url = "https://www.cursemaven.com"
@@ -47,7 +61,7 @@ repositories {
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft {
-    mappings channel: 'official', version: '1.18.2'
+    mappings channel: 'official', version: '1.20.1'
 
     runs {
         client {
@@ -122,14 +136,13 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.1.0'
+    minecraft 'net.minecraftforge:forge:1.20.1-47.1.0'
 
-    compileOnly fg.deobf("mezz.jei:jei-1.18.2:9.7.0.193:api")
-    runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.7.0.193")
-
-    implementation fg.deobf("curse.maven:farmersdelight-398521:3765351")
-    runtimeOnly fg.deobf("curse.maven:appleskin-248787:3686482")
-}
+    compileOnly fg.deobf("mezz.jei:jei-1.20.1-common-api:15.2.0.27")
+    compileOnly fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.2.0.27")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.2.0.27")
+    implementation fg.deobf("curse.maven:farmers-delight-398521:4679319")
+    runtimeOnly fg.deobf("curse.maven:appleskin-248787:4770828")}
 
 jar {
     manifest {
@@ -138,7 +151,7 @@ jar {
                 "Specification-Vendor"    : "foundwiz",
                 "Specification-Version"   : "1",
                 "Implementation-Title"    : "largemeals",
-                "Implementation-Version"  : "1.18.2-1.0",
+                "Implementation-Version"  : "1.20.1-1.0",
                 "Implementation-Vendor"   : "foundwiz",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
